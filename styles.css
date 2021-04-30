@@ -32,7 +32,7 @@ body, .navbar{
     align-items: center;
     width: 100%;
     overflow-y:hidden;
-    scrollbar-color: rgb(71, 66, 66) #212124;
+    scrollbar-color: rgb(92, 90, 90) #212124;
 }
 .ms-slider__inner {
     transition: 450ms -webkit-transform;
