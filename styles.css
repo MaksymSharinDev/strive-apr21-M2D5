@@ -125,5 +125,24 @@ body, .navbar{
 }
 
 
-
-
+li{
+    list-style-type: none;
+}
+.icons li{
+    padding-left: 5px;
+}
+svg:hover{
+    fill:white;
+}
+ footer a{
+    /* text-decoration: none;!important */
+    color:  #636466;
+    
+}
+footer a:hover{
+    color:  #a2a4a8;
+    
+}
+.copyright{
+    color:#636466;
+}
