@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
+    <div class="container-fluid">
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
         <a class="navbar-brand" href="#home"><img class="img-fluid" style="max-height: 50px;" src="01_Netflix_Logo/01_Netflix_Logo_RGB/Netflix_Logo_RGB.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -21,11 +22,11 @@
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item ">
+              <a class="nav-link" href="#home">Home </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#tvShows">TV Shows</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#tvShows">TV Shows<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#movies">Movies</a>
@@ -59,16 +60,266 @@
       </nav>
     </header>
 
-    <main>
+    <main >
 
-      <section id="home"></section>
-      <section id="tvShows"></section>
-      <section id="movies"></section>
+      
+      <section id="tvShows" class="row ">
+          <div class="col-12 col-sm-2"><h2 >Tv shows</h2></div>
+          <div class="col-12 col-sm-2 "> <div class="dropdown ">
+            <button class="btn btn-secondary btn-genres dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             Genres
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div></div>
+          <div class="col-12 col-sm-8 d-flex justify-content-end"><button type="button" class="btn btn-outline-dark btn-icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+            <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+          </svg></button>
+                                     <button type="button" class="btn btn-outline-dark btn-icons"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-all" viewBox="0 0 16 16">
+                                      <path d="M0 0h16v16H0V0zm1 1v6.5h6.5V1H1zm7.5 0v6.5H15V1H8.5zM15 8.5H8.5V15H15V8.5zM7.5 15V8.5H1V15h6.5z"/>
+                                    </svg></button>
+                                    </div>
+      </section>
+     
+     
+      <section id="trending">
+        <h4>Tranding Now</h4>
+        <!-- <div class="row row-col-12 row-col-sm-6 row-col-md-4 row-col-lg-3 no-gutters">
+          <div class="col"> <img class src="https://via.placeholder.com/150" alt=""> </div>
+          <div class="col"><img class="img-fluid" src="https://via.placeholder.com/150" alt=""></div>
+          <div class="col"><img class="img-fluid" src="https://via.placeholder.com/150" alt=""></div>
+          <div class="col"><img class="img-fluid" src="https://via.placeholder.com/150" alt=""></div>
+          <div class="col"><img class="img-fluid" src="https://via.placeholder.com/150" alt=""></div>
+          <div class="col"><img class="img-fluid" src="https://via.placeholder.com/150" alt=""></div>
+        </div> -->
+        <div class="ms-slider ms-slider--enlarge ">
+          <div class="ms-slider__inner">
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://assets.brand.microsites.netflix.io/assets/d3e211b0-8193-11e9-bf79-066b49664af6_cm_1024w.jpg?v=16" alt=""  />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+          </div>
+        </div>
+      
+      </div>
+        
+      </section>
+
       <section id="recentlyAdded"></section>
       <section id="myList"></section>
     </main>
 
     <footer></footer>
+  </div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
