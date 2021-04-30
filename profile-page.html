@@ -20,6 +20,10 @@
             background: black;
             color: white;
         }
+        img {
+            width: 100px;
+            height: 100px;
+        }
         hr{
             border-color: grey;
         }
@@ -113,8 +117,8 @@
     <div class="row">
         <div class="col-4"></div>
         <div class="col-4">
-            <div class="row  justify-content-center">
-                <h1 class="my-5 ">Edit Profile</h1>
+            <div class="row">
+                <h1 class="my-5 d-flex justify-content-left ">Edit Profile</h1>
             </div>
             <hr class="solid">
             <div class="row">
@@ -123,7 +127,7 @@
                          class="img-fluid"/>
                 </div>
                 <div class="col-12 col-md-6  padding-left">
-                    <h3 class="p-3" style="background: grey">Strive Student</h3>
+                    <h4 class="p-3" style="background: grey">Strive Student</h4>
                     <br>
                     <label for="language"> Language: </label><br>
                     <select name="language" id="language">
@@ -131,6 +135,13 @@
                         <option value="lg2">Spanish</option>
                         <option value="lg3">Russian</option>
                     </select>
+                    <hr class="solid">
+                                <br>
+                            <div><h4>Maturity Settings:</h4>
+                                <P>All Maturity Ratings</P>
+                                <p>show titles of <b>all maturity ratings</b> for this profile</p>
+                                <button type="button" class="btn btn-outline-dark">EDIT</button></div>
+                                <hr class="solid">
                 </div>
             </div>
         </div>
