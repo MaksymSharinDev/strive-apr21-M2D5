@@ -20,9 +20,76 @@
             background: black;
             color: white;
         }
-        hr{
+
+        hr {
             border-color: grey;
         }
+
+        select {
+            transform: scale(1, 0.9);
+            left: -5px;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.15s;
+            line-height: 1.5em;
+            padding: 0.5em 3.5em 0.5em 1em;
+            /* reset */
+            margin: 0;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+
+            /* from light-outline btn */
+            color: #f8f9fa;
+            background-color: transparent;
+            background-image: none;
+            border-color: #f8f9fa;
+        }
+
+        select:hover {
+            color: #212529;
+            background-color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
+
+        select:active {
+            color: #BBBBBB;
+            border-color: #BBBBBB;
+        }
+
+        select.minimal {
+            background-image: linear-gradient(45deg, transparent 50%, gray 50%),
+            linear-gradient(135deg, gray 50%, transparent 50%),
+            linear-gradient(to right, #ccc, #ccc);
+            background-position: calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px,
+            5px 5px,
+            1px 1.5em;
+            background-repeat: no-repeat;
+        }
+
+        select.minimal:focus {
+            background-image: linear-gradient(45deg, gray 50%, transparent 50%),
+            linear-gradient(135deg, transparent 50%, gray 50%),
+            linear-gradient(to right, #ccc, #ccc);
+            background-position: calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em,
+            calc(100% - 2.5em) 0.5em;
+            background-size: 5px 5px,
+            5px 5px,
+            1px 1.5em;
+            background-repeat: no-repeat;
+            border-color: gray;
+            outline: 0;
+        }
+
         button {
             width: clamp(100px, 10%, 200px);
             min-height: 50px;
@@ -59,8 +126,8 @@
         }
 
         .checkbox > span {
-            color: #34495E;
             padding: 0.5rem 0.25rem;
+            padding-left: 10px;
         }
 
         .checkbox > input {
@@ -105,7 +172,6 @@
     </style>
 </head>
 <body>
-
 <div class="container-fluid ">
 
     <div style="margin-top: 30px"></div>
@@ -113,24 +179,32 @@
     <div class="row">
         <div class="col-4"></div>
         <div class="col-4">
-            <div class="row  justify-content-center">
-                <h1 class="my-5 ">Edit Profile</h1>
+            <div class="row">
+                <h1 class="my-5 " style>
+                    <bold>Edit Profile</bold>
+                </h1>
             </div>
             <hr class="solid">
             <div class="row">
-                <div class="col-12 col-md-6 ">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMlLes9hb2OpilniqpGgHOsIw49rosGaWAz7iGdrKqP8q8nRIKVbgUFEoZCaiiO5leFM&usqp=CAU"
-                         class="img-fluid"/>
+                <div class="col-12 col-md-3 ">
+                    <div class="d-flex justify-content-end">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsMlLes9hb2OpilniqpGgHOsIw49rosGaWAz7iGdrKqP8q8nRIKVbgUFEoZCaiiO5leFM&usqp=CAU"
+                             class="img-fluid"
+                             style="width: 100px;"
+                        />
+                    </div>
+
                 </div>
-                <div class="col-12 col-md-6  padding-left">
+                <div class="col-12 col-md-9  padding-left">
                     <h3 class="p-3" style="background: grey">Strive Student</h3>
                     <br>
                     <label for="language"> Language: </label><br>
-                    <select name="language" id="language">
+                    <select class="form-select minimal" name="language" id="language">
                         <option value="lg1">English</option>
                         <option value="lg2">Spanish</option>
                         <option value="lg3">Russian</option>
                     </select>
+                    <hr class="solid">
                 </div>
             </div>
         </div>
@@ -140,13 +214,14 @@
         <div class="col-4"></div>
         <div class="col-4">
             <div class="row">
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-3 ">
 
                 </div>
-                <div class="col-12 col-md-6  padding-left">
+                <div class="col-12 col-md-9  padding-left">
                     <div class="d-flex ">
                         <button type="button" class="btn btn-outline-dark edit-btn">Dark</button>
                     </div>
+                    <hr class="solid">
                 </div>
             </div>
 
@@ -158,14 +233,19 @@
         <div class="col-4"></div>
         <div class="col-4">
             <div class="row">
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-3 ">
 
                 </div>
-                <div class="col-12 col-md-6  padding-left">
+                <div class="col-12 col-md-9  padding-left">
                     <div class="d-flex flex-column">
+                        <h4> Autoplay Controls </h4>
                         <label class="checkbox">
                             <input type="checkbox"/>
-                            <span>Check Me</span>
+                            <span>Autoplay Next Episode</span>
+                        </label>
+                        <label class="checkbox">
+                            <input style="min-width:40px" type="checkbox"/>
+                            <span>Autoplay Previews while browsing on all devices </span>
                         </label>
                     </div>
                 </div>
@@ -176,20 +256,21 @@
 
     </div>
     <div class="row">
-        <div class="col-4"></div>
         <div class="col-4">
+        </div>
+        <div class="col-4">
+            <hr class="solid">
             <div class="d-flex ">
-                <button type="button" class="btn btn-outline-light">Light</button>
-                <button type="button" class="btn btn-outline-dark">Dark</button>
-                <button type="button" class="btn btn-outline-dark">Dark</button>
+                <button type="button" style="max-width: 120px" class="btn btn-outline-light">SAVE</button>
+                <button type="button" class="btn btn-outline-dark">CANCEL</button>
+                <button type="button" class="btn btn-outline-dark">DELETE PROFILE</button>
             </div>
         </div>
-        <div class="col-4"></div>
+        <div class="col-4">
+        </div>
 
     </div>
 
 </div>
-
-
 </body>
 </html>
